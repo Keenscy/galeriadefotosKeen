@@ -4,36 +4,15 @@
   <meta charset="UTF-8">
   <title>Click love encoded</title>
   <link rel="stylesheet" href="./style.css">
-  <style>
-    .particles-circle {
-      position: absolute;
-      background-color: #fff;
-      border-radius: 50%;
-      animation: particles 1s linear infinite;
-    }
-
-    @keyframes particles {
-      0% {
-        transform: scale(0);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 0;
-      }
-    }
-  </style>
 </head>
 <body>
 
 <div class='v-align'>
   <div class='hero-btn'>
-    <button class='btn'>
+    <button id="memoriesBtn" class='btn'>
       NUESTROS RECUERDOS
     </button>
     <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <!-- Añade más elementos <span> según sea necesario -->
   </div>
 </div>
 
@@ -49,8 +28,11 @@
 <div class='v-align'>
   <div class='hero-btn'>
     <button class='btn'>
-      NUESTROS RECUERDOS
+    NUESTROS RECUERDOS
+     
     </button>
+
+
     <span class='particles-circle'></span>
     <span class='particles-circle'></span>
     <span class='particles-circle'></span>
@@ -86,10 +68,7 @@
     <span class='particles-circle'></span>
     <span class='particles-circle'></span>
     <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
+    
   </div>
 </div>
 
@@ -98,9 +77,17 @@
   <span>♥</span>
   POR
   <a href='https://encoded.pe' target='_blank'>MABEL ENCODED</a>
+
 </div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script>
+  document.getElementById('memoriesBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita el comportamiento predeterminado del botón (recargar la página)
+    // Aquí puedes agregar el código para mostrar las fotos en la página
+  });
+</script>
+
 <script  src="./script.js"></script>
 
 </body>
