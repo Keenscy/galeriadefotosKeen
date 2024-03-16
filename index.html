@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <title>Click love encoded</title>
   <link rel="stylesheet" href="./style.css">
+  <style>
+    .audio-player {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
 <div class='v-align'>
   <div class='hero-btn'>
-    <button class='btn' type="button">
+    <button class='btn' id="mostrarAudio">
       NUESTROS RECUERDOS
     </button>
     <span class='particles-circle'></span>
@@ -17,7 +22,7 @@
 </div>
 
 <!-- Reproductor de audio -->
-<div class="audio-player">
+<div class="audio-player" id="reproductor">
   <audio controls>
     <source src="https://github.com/Keenscy/floresdekeen.github.io/raw/main/MILO%20J%20-%20M.A.I%20(Video%20Oficial)%20-%20MILO%20J.mp3" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
@@ -27,48 +32,18 @@
 
 <div class='v-align'>
   <div class='hero-btn'>
-    <button class='btn' type="button">
-      NUESTROS RECUERDOS
+    <button class='btn'>
+    NUESTROS RECUERDOS
+     
     </button>
 
     <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    <span class='particles-circle'></span>
-    
+    <!-- Aquí deberías cargar las fotos -->
+    <script>
+      document.getElementById("mostrarAudio").addEventListener("click", function() {
+        document.getElementById("reproductor").style.display = "block";
+      });
+    </script>
   </div>
 </div>
 
@@ -80,9 +55,8 @@
 
 </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
 
 </body>
 </html>
-
