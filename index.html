@@ -9,7 +9,7 @@
 
 <div class='v-align'>
   <div class='hero-btn'>
-    <button id="memoriesBtn" class='btn'>
+    <button class='btn' id="nuestros-recuerdos-btn">
       NUESTROS RECUERDOS
     </button>
     <span class='particles-circle'></span>
@@ -68,6 +68,10 @@
     <span class='particles-circle'></span>
     <span class='particles-circle'></span>
     <span class='particles-circle'></span>
+    <span class='particles-circle'></span>
+    <span class='particles-circle'></span>
+    <span class='particles-circle'></span>
+    <span class='particles-circle'></span>
     
   </div>
 </div>
@@ -82,12 +86,14 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script>
-  document.getElementById('memoriesBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Evita el comportamiento predeterminado del botón (recargar la página)
-    // Aquí puedes agregar el código para mostrar las fotos en la página
+  $(document).ready(function() {
+    $("#nuestros-recuerdos-btn").click(function(event) {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado del botón
+      event.stopPropagation(); // Detener la propagación del evento para evitar la recarga de la página
+      // Agregar aquí el código para cargar las fotos en lugar de recargar la página
+    });
   });
 </script>
-
 <script  src="./script.js"></script>
 
 </body>
