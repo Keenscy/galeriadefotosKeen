@@ -2,12 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Galeria de nuestras fotos</title>
+  <title>Galeria de fotos encoded</title>
   <link rel="stylesheet" href="./style.css">
   <style>
-    .audio-player button {
-      font-size: 20px; /* Ajusta el tamaño del texto */
-      padding: 10px 20px; /* Ajusta el padding para hacer el botón más grande */
+    body {
+      background-color: black; /* Cambia el color de fondo a negro */
+      color: white; /* Cambia el color del texto a blanco */
+      font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+      margin: 0; /* Elimina el margen predeterminado */
+      padding: 0; /* Elimina el padding predeterminado */
+    }
+
+    .Container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; /* Centra los elementos horizontalmente */
+      gap: 20px; /* Espacio entre las imágenes */
+      padding: 20px; /* Añade un poco de espacio alrededor de las imágenes */
+    }
+
+    .Picture {
+      flex: 0 0 calc(33.33% - 20px); /* Ajusta el tamaño de las imágenes */
+      max-width: calc(33.33% - 20px); /* Ajusta el tamaño máximo de las imágenes */
+      position: relative;
+    }
+
+    .Picture-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .Picture-note {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+      padding: 5px 10px;
+      border-radius: 5px;
     }
 
     .header-container {
@@ -24,6 +56,16 @@
     .audio-player button {
       font-size: 20px;
       padding: 15px 30px;
+    }
+
+    .made-with-love {
+      text-align: center;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .made-with-love a {
+      color: white;
     }
   </style>
 </head>
